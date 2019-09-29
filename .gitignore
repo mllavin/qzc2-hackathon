@@ -1,0 +1,14 @@
+node_modules/**/*
+npm-debug.*
+gen/*
+web-build/
+web-report/
+.expo/*
+.idea/*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.log
+*.orig.*

@@ -60,7 +60,7 @@ export default function HomeScreen() {
 
         <View
           style={[styles.codeHighlightContainer, styles.navigationFilename]}>
-          <MonoText style={styles.codeHighlightText}>
+          <MonoText>
             navigation/MainTabNavigator.js
           </MonoText>
         </View>
@@ -115,8 +115,9 @@ const styles = StyleSheet.create({
   },
   developmentModeText: {
     marginBottom: 20,
-    color: 'rgba(0,0,0,0.4)',
-    fontSize: 14,
+    color: 'rgba(0,0,0,0.6)',
+    fontSize: 17,
+    fontStyle: 'italic',
     lineHeight: 19,
     textAlign: 'center',
   },
@@ -142,17 +143,15 @@ const styles = StyleSheet.create({
   homeScreenFilename: {
     marginVertical: 7,
   },
-  codeHighlightText: {
-    color: 'rgba(96,100,109, 0.8)',
-  },
   codeHighlightContainer: {
     backgroundColor: 'rgba(0,0,0,0.05)',
     borderRadius: 3,
     paddingHorizontal: 4,
   },
   getStartedText: {
-    fontSize: 17,
-    color: 'rgba(96,100,109, 1)',
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: 'rgba(24,54,147, 1)',
     lineHeight: 24,
     textAlign: 'center',
   },
@@ -178,7 +177,8 @@ const styles = StyleSheet.create({
   },
   tabBarInfoText: {
     fontSize: 17,
-    color: 'rgba(96,100,109, 1)',
+    fontWeight: 'bold',
+    color: 'rgba(24,54,147, 1)',
     textAlign: 'center',
   },
   navigationFilename: {
@@ -192,7 +192,8 @@ const styles = StyleSheet.create({
     paddingVertical: 15,
   },
   helpLinkText: {
-    fontSize: 14,
+    fontSize: 17,
+    fontStyle: 'italic',
     color: '#2e78b7',
   },
 });

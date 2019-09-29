@@ -4,7 +4,8 @@ import { createStackNavigator, createBottomTabNavigator } from 'react-navigation
 
 import TabBarIcon from '../components/TabBarIcon';
 import HomeScreen from '../screens/HomeScreen';
-import LinksScreen from '../screens/LinksScreen';
+import DocumentsScreen from '../screens/DocumentsScreen';
+import SavedDocumentsScreen from '../screens/SavedDocumentsScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 
 const config = Platform.select({
@@ -35,21 +36,37 @@ HomeStack.navigationOptions = {
 
 HomeStack.path = '';
 
-const LinksStack = createStackNavigator(
+const DocumentsStack = createStackNavigator(
   {
-    Links: LinksScreen,
+    Documents: DocumentsScreen,
   },
   config
 );
 
-LinksStack.navigationOptions = {
-  tabBarLabel: 'Links',
+DocumentsStack.navigationOptions = {
+  tabBarLabel: 'Documents',
   tabBarIcon: ({ focused }) => (
-    <TabBarIcon focused={focused} name={Platform.OS === 'ios' ? 'ios-link' : 'md-link'} />
+    <TabBarIcon focused={focused} name={Platform.OS === 'ios' ? 'ios-document' : 'md-document'} />
   ),
 };
 
-LinksStack.path = '';
+DocumentsStack.path = '';
+
+const SavedDocumentsStack = createStackNavigator(
+  {
+    SavedDocuments: SavedDocumentsScreen,
+  },
+  config
+);
+
+SavedDocumentsStack.navigationOptions = {
+  tabBarLabel: 'Saved Documents',
+  tabBarIcon: ({ focused }) => (
+    <TabBarIcon focused={focused} name={Platform.OS === 'ios' ? 'ios-filing' : 'md-filing'} />
+  ),
+};
+
+SavedDocumentsStack.path = '';
 
 const SettingsStack = createStackNavigator(
   {
@@ -69,7 +86,8 @@ SettingsStack.path = '';
 
 const tabNavigator = createBottomTabNavigator({
   HomeStack,
-  LinksStack,
+  DocumentsStack,
+  SavedDocumentsStack,
   SettingsStack,
 }, {
   tabBarOptions: {

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, FlatList, ActivityIndicator } from 'react-native';
+import { View, FlatList } from 'react-native';
 import { ListItem, SearchBar } from 'react-native-elements';
 
 class DocumentsScreen extends Component {
@@ -92,10 +92,12 @@ class DocumentsScreen extends Component {
           renderItem={({ item }) => (
             <ListItem
               title={item.name}
-              // onPress={this.DocumentView.bind(this, props.item)}
+              bottomDivider
+              chevron
+              // onPress={this.DocumentView.bind(this, item)}
             />
           )}
-          ItemSeparatorComponent={this.renderSeparator}
+          // ItemSeparatorComponent={this.renderSeparator}
           ListHeaderComponent={this.renderHeader}
           stickyHeaderIndices={[0]}
         />

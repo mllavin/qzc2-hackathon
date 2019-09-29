@@ -10,5 +10,5 @@ export default function SettingsScreen() {
 }
 
 SettingsScreen.navigationOptions = {
-  title: 'app.json',
+  title: 'PDH: Philippine Document Helper',
 };

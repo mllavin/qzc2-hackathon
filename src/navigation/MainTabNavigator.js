@@ -5,6 +5,7 @@ import { createStackNavigator, createBottomTabNavigator } from 'react-navigation
 import TabBarIcon from '../components/TabBarIcon';
 import HomeScreen from '../screens/HomeScreen';
 import DocumentsScreen from '../screens/DocumentsScreen';
+import DocumentViewScreen from '../screens/DocumentViewScreen';
 import SavedDocumentsScreen from '../screens/SavedDocumentsScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 
@@ -39,6 +40,7 @@ HomeStack.path = '';
 const DocumentsStack = createStackNavigator(
   {
     Documents: DocumentsScreen,
+    DocumentView: DocumentViewScreen,
   },
   config
 );

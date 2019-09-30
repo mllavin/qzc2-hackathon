@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "PDH",
-    "slug": "qzc2-pdh",
+    "name": "PDA",
+    "slug": "pda",
     "privacy": "public",
     "sdkVersion": "35.0.0",
     "platforms": [

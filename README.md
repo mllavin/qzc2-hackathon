@@ -1,4 +1,4 @@
-# PDH: Philippine Document Helper
+# PDA: Philippine Documents Assistant
 
 ## Requirements
 1. Install [Android Studio version 3.0+](https://developer.android.com/studio/)

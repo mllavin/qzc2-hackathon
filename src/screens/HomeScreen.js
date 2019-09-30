@@ -130,11 +130,11 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   welcomeImage: {
-    width: 250,
-    height: 250,
+    width: 325,
+    height: 325,
     resizeMode: 'contain',
-    marginTop: 3,
-    marginLeft: -10,
+    marginTop: 5,
+    marginLeft: 0,
   },
   getStartedContainer: {
     alignItems: 'center',

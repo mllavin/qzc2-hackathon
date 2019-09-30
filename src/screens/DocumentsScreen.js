@@ -94,7 +94,7 @@ class DocumentsScreen extends Component {
               title={item.name}
               bottomDivider
               chevron
-              onPress={this.props.navigation.navigate('DocumentViewScreen')}
+              onPress={() => this.props.navigation.navigate('DocumentView', item)}
             />
           )}
           // ItemSeparatorComponent={this.renderSeparator}
